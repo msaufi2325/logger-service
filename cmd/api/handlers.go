@@ -32,5 +32,5 @@ func (app *Config) WriteLog(w http.ResponseWriter, r *http.Request) {
 		Message: "Successfully wrote log entry",
 	}
 
-	app.writeJSON(w, http.StatusOK, resp)
+	app.writeJSON(w, http.StatusAccepted, resp)
 }
